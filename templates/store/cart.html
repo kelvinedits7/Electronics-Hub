@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+  <h3>Your Cart</h3>
+  {% if cart.items.all %}
+  <table class="table">
+    <thead><tr><th>Product</th><th>Qty</th><th>Subtotal</th><th></th></tr></thead>
+    <tbody>
+      {% for it in cart.items.all %}
+      <tr>
+        <td>{{ it.product.name }}</td>
+        <td>{{ it.quantity }}</td>
+        <td>{{ it.get_total}}</td>
+        <td><a href="{% url 'remove_from_cart' it.id %}" class="btn btn-sm btn-danger">Remove</a></td>
+      </tr>
+      {% endfor %}
+      <tr><td></td><td><strong>Total</strong></td><td><strong> {{ cart.get_total}}</strong></td><td></td></tr>
+    </tbody>
+  </table>
+  <form method="post" action="{% url 'checkout' %}">{% csrf_token %}
+    <div class="mb-2"><label><input type="radio" name="payment_method" value="stripe" checked> Pay with Card (Stripe)</label></div>
+    <div class="mb-2"><label><input type="radio" name="payment_method" value="cod"> Cash on Delivery</label></div>
+    <button class="btn btn-success" type="submit">Proceed to Checkout</button>
+  </form>
+  {% else %}
+  <p>Your cart is empty.</p>
+  {% endif %}
+{% endblock %}

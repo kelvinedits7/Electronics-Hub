@@ -1,0 +1,188 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+<div class="container my-5">
+  <div class="row g-5">
+    
+    <!-- Left: Product Images -->
+    <div class="col-md-6">
+      <div class="product-gallery text-center">
+        <!-- Main Image -->
+        <div class="border rounded shadow-sm p-3 bg-white">
+          <img id="mainImage" src="{{ product.image.url }}" 
+               alt="{{ product.name }}" 
+               class="img-fluid rounded" 
+               style="max-height:450px; object-fit:contain;">
+        </div>
+
+        <!-- Thumbnails -->
+        <div class="d-flex justify-content-center gap-2 mt-3 flex-wrap">
+          {% if product.image %}
+            <img src="{{ product.image.url }}" 
+                 onclick="swapImage(this)" 
+                 class="img-thumbnail rounded" 
+                 style="width:80px; height:80px; object-fit:cover; cursor:pointer;">
+          {% endif %}
+          {% for img in product.images.all %}
+            <img src="{{ img.image.url }}" 
+                 onclick="swapImage(this)" 
+                 class="img-thumbnail rounded" 
+                 style="width:80px; height:80px; object-fit:cover; cursor:pointer;">
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Product Info -->
+    <div class="col-md-6">
+      <h2 class="fw-bold">{{ product.name }}</h2>
+      <p class="text-muted mb-1">{{ product.category.name }}</p>
+
+      <!-- Price -->
+      <h3 class="text-success fw-bold mb-3">${{ product.price}}</h3>
+
+      <!-- Stock -->
+      {% if product.stock > 0 %}
+        <p><span class="badge bg-success">In Stock</span></p>
+      {% else %}
+        <p><span class="badge bg-danger">In Stock</span></p>
+      {% endif %}
+
+      <!-- Quantity + Add to Cart -->
+      {% if product.stock > 0 %}
+      <form action="{% url 'add_to_cart' product.id %}" method="post" class="d-flex align-items-center mt-4">
+        {% csrf_token %}
+        <div class="input-group me-3" style="width:140px;">
+          <button type="button" class="btn btn-outline-secondary" onclick="decreaseQty()">-</button>
+          <input type="number" id="quantity" name="quantity" value="1" min="1" class="form-control text-center">
+          <button type="button" class="btn btn-outline-secondary" onclick="increaseQty()">+</button>
+        </div>
+        <button type="submit" class="btn btn-lg btn-primary px-4">Add to Cart</button>
+      </form>
+      {% endif %}
+
+      <!-- Divider -->
+      <hr class="my-4">
+
+      <!-- Product Description -->
+      <div>
+        <h5 class="fw-bold">About this product</h5>
+        <p class="text-muted">{{ product.description|linebreaks }}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reviews & Ratings -->
+  <div class="mt-5">
+    <h4 class="fw-bold">Customer Reviews</h4>
+    <hr>
+
+    {% if reviews %}
+      <div class="d-flex align-items-center mb-3">
+        <span class="me-2 fs-4 text-warning">
+          {% for i in "12345"|make_list %}
+            {% if forloop.counter <= avg_rating %}
+              ⭐
+            {% else %}
+              ☆
+            {% endif %}
+          {% endfor %}
+        </span>
+        <span class="fw-bold">{{ avg_rating|floatformat:1 }} out of 5</span>
+        <span class="text-muted ms-2">({{ reviews.count }} reviews)</span>
+      </div>
+    {% else %}
+      <p>No reviews yet. Be the first to review!</p>
+    {% endif %}
+
+    <!-- Review List -->
+    <div class="list-group mb-4">
+      {% for review in reviews %}
+        <div class="list-group-item border-0 border-bottom">
+          <strong>{{ review.user.username }}</strong>
+          <span class="text-warning">
+            {% for i in "12345"|make_list %}
+              {% if forloop.counter <= review.rating %}⭐{% else %}☆{% endif %}
+            {% endfor %}
+          </span>
+          <p class="mb-1">{{ review.comment }}</p>
+          <small class="text-muted">{{ review.created_at|date:"F j, Y" }}</small>
+        </div>
+      {% endfor %}
+    </div>
+
+    <!-- Write a Review -->
+    {% if user.is_authenticated %}
+      <div class="card p-4 shadow-sm">
+        <h5 class="fw-bold">Write a Review</h5>
+        <form method="post">
+          {% csrf_token %}
+          <div class="mb-3">
+            <label for="rating" class="form-label">Rating</label>
+            <select class="form-select" id="rating" name="rating">
+              <option value="5">⭐⭐⭐⭐⭐ - Excellent</option>
+              <option value="4">⭐⭐⭐⭐ - Good</option>
+              <option value="3">⭐⭐⭐ - Average</option>
+              <option value="2">⭐⭐ - Poor</option>
+              <option value="1">⭐ - Very Bad</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="review" class="form-label">Your Review</label>
+            <textarea class="form-control" id="review" name="review" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit Review</button>
+        </form>
+      </div>
+    {% else %}
+      <p><a href="{% url 'login' %}">Login</a> to write a review.</p>
+    {% endif %}
+  </div>
+
+  <!-- Related Products -->
+  <div class="row mt-5">
+    <div class="col-12">
+      <h4 class="fw-bold">You may also like</h4>
+      <hr>
+    </div>
+    {% for related in related_products %}
+      <div class="col-md-3 mb-4">
+        <div class="card h-100 text-center border-0 shadow-sm">
+          <a href="{% url 'product_detail' related.slug %}">
+            <img src="{{ related.image.url }}" class="card-img-top rounded" style="height:180px; object-fit:cover;" alt="{{ related.name }}">
+          </a>
+          <div class="card-body">
+            <h6>
+              <a href="{% url 'product_detail' related.slug %}" class="text-decoration-none text-dark">
+                {{ related.name }}
+              </a>
+            </h6>
+            <p class="fw-bold text-success">₵{{ related.price }}</p>
+            <a href="{% url 'product_detail' related.slug %}" class="btn btn-sm btn-outline-primary">View</a>
+          </div>
+        </div>
+      </div>
+    {% empty %}
+      <p class="text-muted">No related products available.</p>
+    {% endfor %}
+  </div>
+</div>
+
+<script>
+function increaseQty() {
+  let qty = document.getElementById("quantity");
+  qty.value = parseInt(qty.value) + 1;
+}
+function decreaseQty() {
+  let qty = document.getElementById("quantity");
+  if (parseInt(qty.value) > 1) qty.value = parseInt(qty.value) - 1;
+}
+function swapImage(el) {
+  document.getElementById("mainImage").src = el.src;
+}
+</script>
+
+{% endblock %}

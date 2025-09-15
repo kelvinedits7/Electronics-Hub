@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+<!-- Banners -->
+<div id="carouselExampleIndicators" class="carousel slide mb-4" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    {% for banner in banners %}
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{ forloop.counter0 }}"
+        {% if forloop.first %}class="active"{% endif %}></button>
+    {% endfor %}
+  </div>
+  <div class="carousel-inner">
+    {% for banner in banners %}
+      <div class="carousel-item {% if forloop.first %}active{% endif %}">
+        <img src="{{ banner.image.url }}" class="d-block w-100" alt="Banner">
+      </div>
+    {% endfor %}
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+
+<!-- Categories Section -->
+<div class="container my-4">
+  <h4 class="mb-3">Shop by Category</h4>
+  <div class="d-flex flex-wrap justify-content-center gap-3">
+    {% for category in categories %}
+      <a href="{% url 'products_by_category' category.slug %}" class="btn btn-outline-primary px-4 py-2">
+        {{ category.name }}
+      </a>
+    {% empty %}
+      <p>No categories available.</p>
+    {% endfor %}
+  </div>
+</div>
+
+<!-- Products Section -->
+<div class="row">
+  {% for product in featured %}
+    <div class="col-md-3 mb-4">
+      <div class="card h-100 d-flex flex-column">
+        <a href="{% url 'product_detail' product.slug %}">
+          {% if product.image %}
+            <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}"
+              style="height: 200px; object-fit: cover;">
+          {% else %}
+            <img src="{% static 'default_product.png' %}" class="card-img-top" alt="{{ product.name }}"
+              style="height: 200px; object-fit: cover;">
+          {% endif %}
+        </a>
+        <div class="card-body text-center flex-grow-1 d-flex flex-column">
+          <h5 class="card-title">
+            <a href="{% url 'product_detail' product.slug %}" class="text-decoration-none text-dark">
+              {{ product.name }}
+            </a>
+          </h5>
+          <p class="text-muted">{{ product.category.name }}</p>
+          <p class="fw-bold">{{ product.price}}</p>
+          <div class="d-flex justify-content-between mt-auto">
+            <a href="{% url 'product_detail' product.slug %}" class="btn btn-outline-primary">View</a>
+            <div>
+              <a href="{% url 'add_to_cart' product.id %}" 
+                 class="btn btn-primary add-to-cart-btn" 
+                 data-product-id="{{ product.id }}">
+                Add to Cart
+              </a>
+              <span class="cart-msg" style="display:none; color:green; margin-left:5px;"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% empty %}
+    <p>No products available.</p>
+  {% endfor %}
+</div>
+
+<!-- AJAX Script -->
+<script>
+document.querySelectorAll('.add-to-cart-btn').forEach(button => {
+  button.addEventListener('click', function(e) {
+    e.preventDefault();
+    const msgSpan = this.nextElementSibling;
+
+    fetch(this.href, {
+      method: 'GET',
+      headers: {'X-Requested-With': 'XMLHttpRequest'}
+    })
+    .then(response => response.json())
+    .then(data => {
+      if(data.success){
+        msgSpan.textContent = data.message;
+        msgSpan.style.display = 'inline';
+        setTimeout(() => msgSpan.style.display = 'none', 2000);
+      }
+    })
+    .catch(error => console.error('Error:', error));
+  });
+});
+</script>
+
+{% endblock %}

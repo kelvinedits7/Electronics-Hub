@@ -1,0 +1,1024 @@
+[
+  {
+    "model": "store.product",
+    "pk": 1,
+    "fields": {
+      "name": "iPhone 15 Pro Max",
+      "category": 1,
+      "price": 9500,
+      "description": "The iPhone 15 Pro Max is Apple's latest flagship smartphone featuring the groundbreaking A17 Bionic chip, ProMotion OLED display, and advanced triple-lens camera system with improved night mode, cinematic video, and professional photography capabilities. It boasts a premium titanium build, enhanced battery life, and superior performance for gaming, AR, and everyday multitasking.",
+      "slug": "iphone-15-pro-max",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 2,
+    "fields": {
+      "name": "iPhone 15 Pro",
+      "category": 1,
+      "price": 8500,
+      "description": "iPhone 15 Pro combines the power of the A17 Bionic chip with a sleek lightweight design, featuring a triple-camera system, ProMotion display for smooth visuals, and enhanced AR and photography capabilities. Ideal for users wanting top-tier Apple performance without the larger Max size.",
+      "slug": "iphone-15-pro",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 3,
+    "fields": {
+      "name": "iPhone 15 Plus",
+      "category": 1,
+      "price": 7500,
+      "description": "iPhone 15 Plus offers a 6.7-inch OLED display, improved battery life, and reliable performance with the A16 Bionic chip. Its dual-camera system captures high-quality images and videos. Supports MagSafe accessories for fast charging and attachment.",
+      "slug": "iphone-15-plus",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 4,
+    "fields": {
+      "name": "iPhone 14 Pro Max",
+      "category": 1,
+      "price": 6500,
+      "description": "iPhone 14 Pro Max features the A15 Bionic chip, 6.7-inch Super Retina XDR display, and a triple-camera system. Face ID, night mode, cinematic video recording, and strong build quality make it a premium device for photography and everyday performance.",
+      "slug": "iphone-14-pro-max",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 5,
+    "fields": {
+      "name": "iPhone 14 Pro",
+      "category": 1,
+      "price": 6000,
+      "description": "The iPhone 14 Pro combines a sleek design with the powerful A15 Bionic chip, triple-camera system, and ProMotion display. Ideal for photography, gaming, and productivity tasks with excellent battery life and iOS ecosystem features.",
+      "slug": "iphone-14-pro",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 6,
+    "fields": {
+      "name": "iPhone 14",
+      "category": 1,
+      "price": 5000,
+      "description": "iPhone 14 offers excellent performance at an affordable price with A15 Bionic chip, dual-camera system, 6.1-inch OLED display, and iOS features. Balances efficiency, battery life, and everyday usability for Apple users.",
+      "slug": "iphone-14",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 7,
+    "fields": {
+      "name": "Galaxy S23 Ultra",
+      "category": 1,
+      "price": 7800,
+      "description": "Samsung Galaxy S23 Ultra features a 6.8-inch Dynamic AMOLED display, integrated S Pen stylus, Snapdragon 8 Gen 2 processor, and a quad-camera system capable of professional-level photography and videography. All-day battery life ensures uninterrupted usage.",
+      "slug": "galaxy-s23-ultra",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 8,
+    "fields": {
+      "name": "Galaxy S23+",
+      "category": 1,
+      "price": 6800,
+      "description": "Galaxy S23+ offers a 6.6-inch AMOLED display, versatile triple-camera system, fast charging, and powerful Snapdragon 8 Gen 2 processor. Premium design and software enhancements make it ideal for Android enthusiasts.",
+      "slug": "galaxy-s23-plus",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 9,
+    "fields": {
+      "name": "Galaxy S23",
+      "category": 1,
+      "price": 5800,
+      "description": "Samsung Galaxy S23 is compact yet powerful, featuring a 6.1-inch AMOLED display, triple-camera system, Snapdragon 8 Gen 2 processor, and optimized battery life for daily productivity and photography.",
+      "slug": "galaxy-s23",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 10,
+    "fields": {
+      "name": "Galaxy Z Fold5",
+      "category": 1,
+      "price": 12000,
+      "description": "Galaxy Z Fold5 is Samsung’s foldable flagship phone with a futuristic design, large internal foldable AMOLED display, multi-tasking features, and top-of-the-line Snapdragon 8 Gen 2 processor. Perfect for users wanting a tablet and phone in one.",
+      "slug": "galaxy-z-fold5",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+
+  {
+    "model": "store.product",
+    "pk": 11,
+    "fields": {
+      "name": "Galaxy Z Flip5",
+      "category": 1,
+      "price": 9500,
+      "description": "Galaxy Z Flip5 is a stylish foldable phone that folds into a compact size while providing a flexible 6.7-inch AMOLED main display. Snapdragon 8 Gen 2 processor ensures smooth performance, and its dual-camera system captures high-quality photos.",
+      "slug": "galaxy-z-flip5",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+
+  {
+    "model": "store.product",
+    "pk": 12,
+    "fields": {
+      "name": "Google Pixel 8 Pro",
+      "category": 1,
+      "price": 6500,
+      "description": "Google Pixel 8 Pro delivers a pure Android experience with advanced AI-powered features, Tensor G3 processor, and a triple-camera system for professional-quality photography and videography. Sleek design and smooth display enhance user experience.",
+      "slug": "google-pixel-8-pro",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+
+  {
+    "model": "store.product",
+    "pk": 13,
+    "fields": {
+      "name": "Google Pixel 8",
+      "category": 1,
+      "price": 5500,
+      "description": "Google Pixel 8 offers a pure Android experience with a dual-camera system, Tensor G3 processor, excellent battery life, and smart features like voice assistant and adaptive display. Affordable yet premium in experience.",
+      "slug": "google-pixel-8",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+
+  {
+    "model": "store.product",
+    "pk": 14,
+    "fields": {
+      "name": "OnePlus 12",
+      "category": 1,
+      "price": 6200,
+      "description": "OnePlus 12 is a flagship Android device with fast Snapdragon processor, OxygenOS interface for smooth multitasking, AMOLED display, and versatile camera system for photography enthusiasts. Designed for speed and performance.",
+      "slug": "oneplus-12",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+
+  {
+    "model": "store.product",
+    "pk": 15,
+    "fields": {
+      "name": "OnePlus 11",
+      "category": 1,
+      "price": 5000,
+      "description": "OnePlus 11 combines powerful performance, AMOLED display, and responsive camera system at a competitive price. Ideal for Android users seeking high performance at a lower cost.",
+      "slug": "oneplus-11",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+
+  {
+    "model": "store.product",
+    "pk": 16,
+    "fields": {
+      "name": "Xiaomi 13 Pro",
+      "category": 1,
+      "price": 4800,
+      "description": "Xiaomi 13 Pro features a high-resolution AMOLED display, powerful processor, advanced camera with fast charging, and MIUI enhancements. Excellent for photography, gaming, and long battery usage.",
+      "slug": "xiaomi-13-pro",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+
+  {
+    "model": "store.product",
+    "pk": 17,
+    "fields": {
+      "name": "Xiaomi 13",
+      "category": 1,
+      "price": 4000,
+      "description": "Xiaomi 13 delivers strong performance, AMOLED display, dual-camera setup, and fast charging at an affordable price. Perfect for users who want a balanced smartphone experience without overspending.",
+      "slug": "xiaomi-13",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+
+  {
+    "model": "store.product",
+    "pk": 18,
+    "fields": {
+      "name": "Oppo Find X6 Pro",
+      "category": 1,
+      "price": 4700,
+      "description": "Oppo Find X6 Pro offers a sleek design, excellent AMOLED display, and an advanced camera system. Snapdragon processor ensures smooth performance for photography, video, and gaming.",
+      "slug": "oppo-find-x6-pro",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+
+  {
+    "model": "store.product",
+    "pk": 19,
+    "fields": {
+      "name": "Oppo Reno 11 Pro",
+      "category": 1,
+      "price": 3500,
+      "description": "Oppo Reno 11 Pro is a mid-range smartphone with good performance, AMOLED display, versatile cameras, and reliable battery life. Ideal for daily use and casual photography.",
+      "slug": "oppo-reno-11-pro",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+
+  {
+    "model": "store.product",
+    "pk": 20,
+    "fields": {
+      "name": "Samsung Galaxy A54",
+      "category": 1,
+      "price": 2800,
+      "description": "Samsung Galaxy A54 is a budget-friendly smartphone with solid performance, AMOLED display, capable camera, and long battery life. Designed for users who want reliable Android features without breaking the bank.",
+      "slug": "samsung-galaxy-a54",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+
+  {
+    "model": "store.product",
+    "pk": 21,
+    "fields": {
+      "name": "MacBook Air M2 13-inch",
+      "category": 2,
+      "price": 8000,
+      "description": "The MacBook Air M2 13-inch is a lightweight Apple laptop powered by the M2 chip, delivering excellent performance for everyday tasks, creative work, and multitasking. Features a Retina display, Magic Keyboard, and all-day battery life, ideal for students and professionals.",
+      "slug": "macbook-air-m2-13-inch",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 22,
+    "fields": {
+      "name": "MacBook Pro 14-inch",
+      "category": 2,
+      "price": 12000,
+      "description": "MacBook Pro 14-inch combines portability with professional-grade performance powered by the M2 Pro chip. With a Liquid Retina XDR display, advanced thermal design, and long battery life, it's perfect for video editing, software development, and graphic design.",
+      "slug": "macbook-pro-14-inch",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 23,
+    "fields": {
+      "name": "MacBook Pro 16-inch",
+      "category": 2,
+      "price": 15000,
+      "description": "MacBook Pro 16-inch offers a large Retina display, M2 Pro/Max chips, and powerful GPU options for high-end performance. Ideal for video production, 3D rendering, and professional workflows requiring maximum speed and battery life.",
+      "slug": "macbook-pro-16-inch",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 24,
+    "fields": {
+      "name": "Dell XPS 13",
+      "category": 2,
+      "price": 6500,
+      "description": "Dell XPS 13 is a compact Windows laptop with a stunning InfinityEdge display, latest Intel processor, and solid build quality. Great for business professionals and students seeking a lightweight, high-performance device.",
+      "slug": "dell-xps-13",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 25,
+    "fields": {
+      "name": "Dell XPS 15",
+      "category": 2,
+      "price": 8500,
+      "description": "Dell XPS 15 features a larger display, dedicated GPU options, and powerful Intel processors, making it ideal for content creators, gamers, and professionals who need both performance and portability.",
+      "slug": "dell-xps-15",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 26,
+    "fields": {
+      "name": "HP Spectre x360",
+      "category": 2,
+      "price": 7000,
+      "description": "HP Spectre x360 is a versatile convertible laptop with touchscreen, pen support, and long battery life. Ideal for students, designers, and professionals who value portability and a premium design.",
+      "slug": "hp-spectre-x360",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 27,
+    "fields": {
+      "name": "HP Envy 15",
+      "category": 2,
+      "price": 6000,
+      "description": "HP Envy 15 offers powerful performance with Intel processors, dedicated graphics, and a high-quality display. Designed for professionals, creatives, and multitaskers who need a balance of power and portability.",
+      "slug": "hp-envy-15",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 28,
+    "fields": {
+      "name": "Lenovo ThinkPad X1 Carbon",
+      "category": 2,
+      "price": 7500,
+      "description": "Lenovo ThinkPad X1 Carbon is a durable business laptop with lightweight design, excellent keyboard, long battery life, and enterprise-level security features. Perfect for executives and professionals on the go.",
+      "slug": "lenovo-thinkpad-x1-carbon",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 29,
+    "fields": {
+      "name": "Lenovo Legion 5",
+      "category": 2,
+      "price": 6800,
+      "description": "Lenovo Legion 5 is a gaming laptop featuring high-refresh-rate display, powerful GPU, and efficient cooling system. Ideal for gamers and creators requiring high-performance graphics and smooth gameplay.",
+      "slug": "lenovo-legion-5",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 30,
+    "fields": {
+      "name": "Lenovo IdeaPad 5",
+      "category": 2,
+      "price": 4500,
+      "description": "Lenovo IdeaPad 5 is an affordable laptop for students and professionals, offering solid performance, a sleek design, and long battery life. Perfect for daily computing and productivity tasks.",
+      "slug": "lenovo-ideapad-5",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 31,
+    "fields": {
+      "name": "Asus ROG Strix G15",
+      "category": 2,
+      "price": 7000,
+      "description": "Asus ROG Strix G15 is a gaming laptop with high-refresh display, advanced cooling, and powerful CPU/GPU combination. Optimized for gaming, streaming, and high-end graphics tasks.",
+      "slug": "asus-rog-strix-g15",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 32,
+    "fields": {
+      "name": "Asus ZenBook 14",
+      "category": 2,
+      "price": 5500,
+      "description": "Asus ZenBook 14 is a slim and stylish ultrabook with excellent battery life, lightweight design, and full-featured ports. Perfect for professionals and students seeking a portable yet powerful device.",
+      "slug": "asus-zenbook-14",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 33,
+    "fields": {
+      "name": "Acer Swift 3",
+      "category": 2,
+      "price": 4000,
+      "description": "Acer Swift 3 is a lightweight, budget-friendly laptop with solid performance, long battery life, and portability. Ideal for students, office work, and casual computing.",
+      "slug": "acer-swift-3",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 34,
+    "fields": {
+      "name": "Acer Predator Helios 300",
+      "category": 2,
+      "price": 6800,
+      "description": "Acer Predator Helios 300 is a gaming laptop with high-performance GPU, efficient cooling system, and high-refresh display. Perfect for competitive gaming and heavy graphics tasks.",
+      "slug": "acer-predator-helios-300",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 35,
+    "fields": {
+      "name": "MSI GF63 Thin",
+      "category": 2,
+      "price": 5000,
+      "description": "MSI GF63 Thin is an affordable gaming laptop offering decent GPU performance, lightweight design, and good battery life. Suitable for casual gamers and students.",
+      "slug": "msi-gf63-thin",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 36,
+    "fields": {
+      "name": "Microsoft Surface Laptop 5",
+      "category": 2,
+      "price": 7000,
+      "description": "Microsoft Surface Laptop 5 features a sleek design, high-resolution touchscreen, and powerful Intel processors. Ideal for business users, students, and creative professionals.",
+      "slug": "microsoft-surface-laptop-5",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 37,
+    "fields": {
+      "name": "Microsoft Surface Pro 9",
+      "category": 2,
+      "price": 7200,
+      "description": "Microsoft Surface Pro 9 is a tablet-laptop hybrid with detachable keyboard, high-resolution display, and pen support. Perfect for creative professionals, students, and on-the-go productivity.",
+      "slug": "microsoft-surface-pro-9",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 38,
+    "fields": {
+      "name": "Razer Blade 15",
+      "category": 2,
+      "price": 14000,
+      "description": "Razer Blade 15 is a high-end gaming laptop with premium build quality, high-refresh display, powerful GPU options, and efficient cooling. Designed for professional gamers and content creators.",
+      "slug": "razer-blade-15",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 39,
+    "fields": {
+      "name": "Razer Book 13",
+      "category": 2,
+      "price": 9000,
+      "description": "Razer Book 13 is a productivity-focused ultrabook with lightweight design, excellent keyboard, high-resolution display, and all-day battery life. Perfect for professionals and students.",
+      "slug": "razer-book-13",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 40,
+    "fields": {
+      "name": "Samsung Galaxy Book3 Ultra",
+      "category": 2,
+      "price": 10000,
+      "description": "Samsung Galaxy Book3 Ultra is a premium Windows laptop with high-resolution AMOLED display, powerful Intel processor, and solid build quality. Ideal for creators, professionals, and multimedia tasks.",
+      "slug": "samsung-galaxy-book3-ultra",
+      "created_at": "2025-09-14T12:00:00Z"
+    }
+  },
+
+  {
+    "model": "store.product",
+    "pk": 41,
+    "fields": {
+      "name": "Wireless Charger",
+      "category": 3,
+      "price": 200,
+      "description": "Fast wireless charging pad compatible with all Qi-enabled smartphones. Compact design for convenient desk or bedside charging.",
+      "slug": "wireless-charger",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 42,
+    "fields": {
+      "name": "Phone Case iPhone 15",
+      "category": 3,
+      "price": 80,
+      "description": "Protective silicone case for iPhone 15. Shock-absorbent, lightweight, and designed to maintain easy access to all buttons and ports.",
+      "slug": "phone-case-iphone-15",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 43,
+    "fields": {
+      "name": "Phone Case Samsung S23",
+      "category": 3,
+      "price": 80,
+      "description": "Durable TPU case for Samsung Galaxy S23. Protects against drops, scratches, and everyday wear while keeping the phone slim.",
+      "slug": "phone-case-samsung-s23",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 44,
+    "fields": {
+      "name": "Screen Protector iPhone 15",
+      "category": 3,
+      "price": 50,
+      "description": "Tempered glass screen protector for iPhone 15. Resistant to scratches, smudges, and offers high touch sensitivity.",
+      "slug": "screen-protector-iphone-15",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 45,
+    "fields": {
+      "name": "Screen Protector Samsung S23",
+      "category": 3,
+      "price": 50,
+      "description": "Tempered glass screen protector for Samsung Galaxy S23. Provides maximum scratch resistance and crystal-clear visibility.",
+      "slug": "screen-protector-samsung-s23",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 46,
+    "fields": {
+      "name": "USB-C Cable 1m",
+      "category": 3,
+      "price": 30,
+      "description": "High-speed USB-C charging cable, 1 meter long. Supports fast charging and data transfer for smartphones, tablets, and laptops.",
+      "slug": "usb-c-cable-1m",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 47,
+    "fields": {
+      "name": "USB-C Cable 2m",
+      "category": 3,
+      "price": 40,
+      "description": "Durable 2-meter USB-C cable for extended reach. Supports fast charging and stable data transfer for multiple devices.",
+      "slug": "usb-c-cable-2m",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 48,
+    "fields": {
+      "name": "Power Bank 10000mAh",
+      "category": 3,
+      "price": 250,
+      "description": "Portable 10000mAh power bank for phones and small devices. Lightweight design, fast charging, and multiple USB ports for convenience.",
+      "slug": "power-bank-10000mah",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 49,
+    "fields": {
+      "name": "Power Bank 20000mAh",
+      "category": 3,
+      "price": 400,
+      "description": "High-capacity 20000mAh portable charger for multiple devices. Supports fast charging, ideal for travel and long days out.",
+      "slug": "power-bank-20000mah",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 50,
+    "fields": {
+      "name": "Bluetooth Earbuds",
+      "category": 3,
+      "price": 350,
+      "description": "Wireless Bluetooth earbuds with high-quality sound and microphone. Comfortable fit, long battery life, and portable charging case included.",
+      "slug": "bluetooth-earbuds",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 51,
+    "fields": {
+      "name": "Over-Ear Headphones",
+      "category": 3,
+      "price": 600,
+      "description": "Noise-cancelling over-ear headphones with premium sound quality. Adjustable headband and soft ear cushions for long listening sessions.",
+      "slug": "over-ear-headphones",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 52,
+    "fields": {
+      "name": "Laptop Sleeve 13-inch",
+      "category": 3,
+      "price": 150,
+      "description": "Protective sleeve for 13-inch laptops. Lightweight, padded, and stylish, suitable for everyday transport.",
+      "slug": "laptop-sleeve-13-inch",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 53,
+    "fields": {
+      "name": "Laptop Sleeve 15-inch",
+      "category": 3,
+      "price": 180,
+      "description": "Protective padded sleeve for 15-inch laptops. Stylish and durable, protects against scratches and minor bumps.",
+      "slug": "laptop-sleeve-15-inch",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 54,
+    "fields": {
+      "name": "Laptop Cooling Pad",
+      "category": 3,
+      "price": 300,
+      "description": "Laptop cooling pad with dual fans to prevent overheating. Adjustable height for ergonomic comfort and stable laptop placement.",
+      "slug": "laptop-cooling-pad",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 55,
+    "fields": {
+      "name": "External Hard Drive 1TB",
+      "category": 3,
+      "price": 500,
+      "description": "Portable 1TB external hard drive. High-speed data transfer, compact, and durable. Ideal for backups and additional storage.",
+      "slug": "external-hard-drive-1tb",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 56,
+    "fields": {
+      "name": "External Hard Drive 2TB",
+      "category": 3,
+      "price": 800,
+      "description": "High-capacity 2TB portable external hard drive. Reliable storage solution for large files, media libraries, and backups.",
+      "slug": "external-hard-drive-2tb",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 57,
+    "fields": {
+      "name": "Wireless Mouse",
+      "category": 3,
+      "price": 200,
+      "description": "Ergonomic wireless mouse with long battery life. Smooth tracking and compact design for laptops and desktops.",
+      "slug": "wireless-mouse",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 58,
+    "fields": {
+      "name": "Wired Mouse",
+      "category": 3,
+      "price": 120,
+      "description": "Reliable wired mouse with precise tracking. Plug-and-play design suitable for office work, gaming, and general computing.",
+      "slug": "wired-mouse",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 59,
+    "fields": {
+      "name": "Keyboard Mechanical",
+      "category": 3,
+      "price": 600,
+      "description": "Gaming mechanical keyboard with tactile switches and customizable RGB lighting. Durable build and responsive performance for gamers.",
+      "slug": "keyboard-mechanical",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 60,
+    "fields": {
+      "name": "Keyboard Wireless",
+      "category": 3,
+      "price": 400,
+      "description": "Compact wireless keyboard with reliable connection and long battery life. Perfect for home and office use.",
+      "slug": "keyboard-wireless",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 61,
+    "fields": {
+      "name": "Laptop Stand Adjustable",
+      "category": 3,
+      "price": 350,
+      "description": "Ergonomic adjustable laptop stand. Provides proper angle for typing, cooling airflow, and reduces neck strain.",
+      "slug": "laptop-stand-adjustable",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 62,
+    "fields": {
+      "name": "HDMI Cable 2m",
+      "category": 3,
+      "price": 100,
+      "description": "High-speed 2-meter HDMI cable supporting 4K resolution. Durable and ideal for connecting laptops, monitors, and TVs.",
+      "slug": "hdmi-cable-2m",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+
+
+  {
+    "model": "store.product",
+    "pk": 41,
+    "fields": {
+      "name": "Wireless Charger",
+      "category": 3,
+      "price": 200,
+      "description": "Fast wireless charging pad compatible with all Qi-enabled smartphones. Compact design for convenient desk or bedside charging.",
+      "slug": "wireless-charger",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 42,
+    "fields": {
+      "name": "Phone Case iPhone 15",
+      "category": 3,
+      "price": 80,
+      "description": "Protective silicone case for iPhone 15. Shock-absorbent, lightweight, and designed to maintain easy access to all buttons and ports.",
+      "slug": "phone-case-iphone-15",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 43,
+    "fields": {
+      "name": "Phone Case Samsung S23",
+      "category": 3,
+      "price": 80,
+      "description": "Durable TPU case for Samsung Galaxy S23. Protects against drops, scratches, and everyday wear while keeping the phone slim.",
+      "slug": "phone-case-samsung-s23",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 44,
+    "fields": {
+      "name": "Screen Protector iPhone 15",
+      "category": 3,
+      "price": 50,
+      "description": "Tempered glass screen protector for iPhone 15. Resistant to scratches, smudges, and offers high touch sensitivity.",
+      "slug": "screen-protector-iphone-15",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 45,
+    "fields": {
+      "name": "Screen Protector Samsung S23",
+      "category": 3,
+      "price": 50,
+      "description": "Tempered glass screen protector for Samsung Galaxy S23. Provides maximum scratch resistance and crystal-clear visibility.",
+      "slug": "screen-protector-samsung-s23",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 46,
+    "fields": {
+      "name": "USB-C Cable 1m",
+      "category": 3,
+      "price": 30,
+      "description": "High-speed USB-C charging cable, 1 meter long. Supports fast charging and data transfer for smartphones, tablets, and laptops.",
+      "slug": "usb-c-cable-1m",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 47,
+    "fields": {
+      "name": "USB-C Cable 2m",
+      "category": 3,
+      "price": 40,
+      "description": "Durable 2-meter USB-C cable for extended reach. Supports fast charging and stable data transfer for multiple devices.",
+      "slug": "usb-c-cable-2m",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 48,
+    "fields": {
+      "name": "Power Bank 10000mAh",
+      "category": 3,
+      "price": 250,
+      "description": "Portable 10000mAh power bank for phones and small devices. Lightweight design, fast charging, and multiple USB ports for convenience.",
+      "slug": "power-bank-10000mah",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 49,
+    "fields": {
+      "name": "Power Bank 20000mAh",
+      "category": 3,
+      "price": 400,
+      "description": "High-capacity 20000mAh portable charger for multiple devices. Supports fast charging, ideal for travel and long days out.",
+      "slug": "power-bank-20000mah",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 50,
+    "fields": {
+      "name": "Bluetooth Earbuds",
+      "category": 3,
+      "price": 350,
+      "description": "Wireless Bluetooth earbuds with high-quality sound and microphone. Comfortable fit, long battery life, and portable charging case included.",
+      "slug": "bluetooth-earbuds",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 51,
+    "fields": {
+      "name": "Over-Ear Headphones",
+      "category": 3,
+      "price": 600,
+      "description": "Noise-cancelling over-ear headphones with premium sound quality. Adjustable headband and soft ear cushions for long listening sessions.",
+      "slug": "over-ear-headphones",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 52,
+    "fields": {
+      "name": "Laptop Sleeve 13-inch",
+      "category": 3,
+      "price": 150,
+      "description": "Protective sleeve for 13-inch laptops. Lightweight, padded, and stylish, suitable for everyday transport.",
+      "slug": "laptop-sleeve-13-inch",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 53,
+    "fields": {
+      "name": "Laptop Sleeve 15-inch",
+      "category": 3,
+      "price": 180,
+      "description": "Protective padded sleeve for 15-inch laptops. Stylish and durable, protects against scratches and minor bumps.",
+      "slug": "laptop-sleeve-15-inch",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 54,
+    "fields": {
+      "name": "Laptop Cooling Pad",
+      "category": 3,
+      "price": 300,
+      "description": "Laptop cooling pad with dual fans to prevent overheating. Adjustable height for ergonomic comfort and stable laptop placement.",
+      "slug": "laptop-cooling-pad",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 55,
+    "fields": {
+      "name": "External Hard Drive 1TB",
+      "category": 3,
+      "price": 500,
+      "description": "Portable 1TB external hard drive. High-speed data transfer, compact, and durable. Ideal for backups and additional storage.",
+      "slug": "external-hard-drive-1tb",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 56,
+    "fields": {
+      "name": "External Hard Drive 2TB",
+      "category": 3,
+      "price": 800,
+      "description": "High-capacity 2TB portable external hard drive. Reliable storage solution for large files, media libraries, and backups.",
+      "slug": "external-hard-drive-2tb",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 57,
+    "fields": {
+      "name": "Wireless Mouse",
+      "category": 3,
+      "price": 200,
+      "description": "Ergonomic wireless mouse with long battery life. Smooth tracking and compact design for laptops and desktops.",
+      "slug": "wireless-mouse",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 58,
+    "fields": {
+      "name": "Wired Mouse",
+      "category": 3,
+      "price": 120,
+      "description": "Reliable wired mouse with precise tracking. Plug-and-play design suitable for office work, gaming, and general computing.",
+      "slug": "wired-mouse",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 59,
+    "fields": {
+      "name": "Keyboard Mechanical",
+      "category": 3,
+      "price": 600,
+      "description": "Gaming mechanical keyboard with tactile switches and customizable RGB lighting. Durable build and responsive performance for gamers.",
+      "slug": "keyboard-mechanical",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 60,
+    "fields": {
+      "name": "Keyboard Wireless",
+      "category": 3,
+      "price": 400,
+      "description": "Compact wireless keyboard with reliable connection and long battery life. Perfect for home and office use.",
+      "slug": "keyboard-wireless",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 61,
+    "fields": {
+      "name": "Laptop Stand Adjustable",
+      "category": 3,
+      "price": 350,
+      "description": "Ergonomic adjustable laptop stand. Provides proper angle for typing, cooling airflow, and reduces neck strain.",
+      "slug": "laptop-stand-adjustable",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 62,
+    "fields": {
+      "name": "HDMI Cable 2m",
+      "category": 3,
+      "price": 100,
+      "description": "High-speed 2-meter HDMI cable supporting 4K resolution. Durable and ideal for connecting laptops, monitors, and TVs.",
+      "slug": "hdmi-cable-2m",
+      "created_at": "2025-09-14T12:10:00Z"
+    }
+  }
+]
