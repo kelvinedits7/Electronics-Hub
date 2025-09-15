@@ -1,4 +1,22 @@
 Electronics & Tech Hub - Starter (Stripe test + COD)
+Electronics Hub is a full-featured e-commerce web application built with Django. Users can browse products, view product details, add items to the cart, checkout, and see an order confirmation. The project includes an admin panel for managing products, categories, and reviews, and supports currency display for product prices.
+
+Features
+-User authentication: Sign up, login, and logout
+-Product listing and categories
+-Product detail view with quantity selection
+-Add to cart, remove from cart, and view cart
+-Checkout with simulated payment (Stripe test keys)
+-Related products section
+-Admin panel for managing products, categories, and reviews
+-Product search functionality
+-Responsive UI using Bootstrap
+
+Technologies Used
+-Backend: Python 3.13.5, Django 5.2.6
+-Frontend: HTML, CSS, Bootstrap
+-Database: SQLite3 (for development)
+-Other: Django Crispy Forms, Django Decouple for environment variables
 
 Setup:
 1. Create and activate venv
