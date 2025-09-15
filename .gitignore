@@ -1,14 +1,23 @@
-# Ignore Python cache
-__pycache__/
+# Python/Django
 *.pyc
-
-# Ignore SQLite database
+__pycache__/
 db.sqlite3
+*.log
 
-# Ignore media files (uploads)
-media/
-
-# Ignore virtual environment
+# Virtual environment
 venv/
+env/
 
-staticfiles/
+# Environment variables
+.env
+
+# Static files collected
+/staticfiles/
+
+# Django migrations (optional)
+store/migrations/*.py
+!store/migrations/__init__.py
+
+# IDE files
+*.vscode/
+*.idea/
