@@ -1,4 +1,4 @@
-Electronics & Tech Hub - Starter (Stripe test + COD)
+Electronics & Tech Hub - Starter (Stripe test + COD)....
 Electronics Hub is a full-featured e-commerce web application built with Django. Users can browse products, view product details, add items to the cart, checkout, and see an order confirmation. The project includes an admin panel for managing products, categories, and reviews, and supports currency display for product prices.
 
 Features
@@ -42,3 +42,14 @@ Setup:
    python manage.py runserver
 
 6. Admin: http://127.0.0.1:8000/admin/ - add Categories, Products, Banners, then test site.
+
+
+Group Name: E-Shop Innovators
+Group Members:
+1. Dakey Kelvin Kojo - 01241471B
+2. James Agbesi - 01242068B
+3. Agu Tamakloe Jerry - 01242453B 
+4. Lartey Richmond - 01241423B
+5. Taha Abiba Boyo - 01243278B
+
+
